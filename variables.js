@@ -2,6 +2,5 @@
 let a;
 a = 'Hello';
 let b;
-b= 'Hello';
+b= a
 console.log(b);
-
