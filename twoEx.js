@@ -1,8 +1,18 @@
-let number
-let string
-let boolean
-let underfined
-console.log(typeof 42);
-console.log(typeof 'blubber');
-console.log(typeof true);
-console.log(typeof Hllll)
+let number = 42
+let string = 'bloober'
+let boolean = true
+let id = Symbol('llofo');
+let f = new Object(123);
+let h = null
+let ad =undefined;
+function showMessage(){
+
+}
+console.log(typeof number,number);
+console.log(typeof string,string);
+console.log(typeof boolean,boolean);
+console.log(typeof id,id);
+console.log(typeof f,f);
+console.log(typeof undefined,undefined);
+console.log(typeof swowMessage,showMessage);
+console.log(typeof h,h);
