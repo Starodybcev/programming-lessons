@@ -11,6 +11,11 @@ const requestHandler = (request, response) => {
     } else {
         response.write("<h2>Not found</h2>");
     }
+    fs.appendFileSync("hello.txt", request.url);
+    fs.appendFileSync("hello.txt", request.method);
+    fs.appendFileSync("hello.txt", user);
+    console.log("Запись файла завершена...");
+
     response.end();
     console.log("Url: " + request.url);
     console.log("Тип запроса: " + request.method);
@@ -18,11 +23,6 @@ const requestHandler = (request, response) => {
     console.log("заголовки");
     console.log(request.headers);
     let user = JSON.stringify(request.headers);
-    
-    fs.appendFileSync("hello.txt", request.url);
-    fs.appendFileSync("hello.txt", request.method);
-    fs.appendFileSync("hello.txt", user);
-    console.log("Запись файла завершена...");
 
 };
 http.createServer(requestHandler).listen(3000);
