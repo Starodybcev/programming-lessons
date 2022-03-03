@@ -4,7 +4,7 @@ response.setHeader("Content-Type", "text/html; charset=utf-8;");
 if(request.url === "/home" || request.url === "/"){
 response.write("<h2>Home</h2>");
 }
-else if(request.url == "/about"){
+else if(request.url == "/about") {
 response.write("<h2>About</h2>");
 }
 else if(request.url == "/contact"){
