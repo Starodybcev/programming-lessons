@@ -15,14 +15,14 @@ const requestHandler = (request, response) => {
     console.log("Url: " + request.url);
     console.log("Тип запроса: " + request.method);
     console.log("User-Agent: " + request.headers["user-agent"]);
-    console.log("Все заголовки");
+    console.log("заголовки");
     console.log(request.headers);
     let user = JSON.stringify(request.headers);
     
     fs.appendFileSync("hello.txt", request.url);
     fs.appendFileSync("hello.txt", request.method);
     fs.appendFileSync("hello.txt", user);
-    console.log("Запись файла завершена. Содержимое файла:");
+    console.log("Запись файла завершена...");
 
 };
 http.createServer(requestHandler).listen(3000);
