@@ -8,10 +8,15 @@ const requestHandler = (request, response) => {
         response.write("<h2>About</h2>");
     } else if (request.url == "/contact") {
         response.write("<h2>Contacts</h2>");
-    } else {
+        else if (request.url == "/images/1") {
+            let content = fs.readFileSync
+        response.setHeader("content-Type","image/jpeg")
+        response.end(content);
+
+    {
         response.write("<h2>Not found</h2>");
     }
-    fs.appendFileSync("hello.txt", request.url);
+    fs.imgagesSync("", request.url);
     fs.appendFileSync("hello.txt", request.method);
     fs.appendFileSync("hello.txt", user);
     console.log("Запись файла завершена...");
@@ -27,3 +32,4 @@ const requestHandler = (request, response) => {
 
 };
 http.createServer(requestHandler).listen(3000);
+<
