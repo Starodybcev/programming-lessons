@@ -10,6 +10,7 @@ response.write("<h2>About</h2>");
 else if(request.url == "/contact"){
 response.write("<h2>Contacts</h2>");
 }
+
 else{
 response.write("<h2>Not found</h2>");
 }
