@@ -1,5 +1,8 @@
 const fs = require("fs");
 const http = require("http");
+
+
+
 const requestHandler = (request, response) => {
     response.setHeader("Content-Type", "text/html; charset=utf-8;");
     if (request.url === "/home" || request.url === "/") {
@@ -10,7 +13,7 @@ const requestHandler = (request, response) => {
 
 
 
-        
+
     } else if (request.url == "/image/1") {
         let content = fs.readFileSync("1.jpg");
         response.writeHead(200, {
@@ -25,7 +28,6 @@ const requestHandler = (request, response) => {
         response.writeHead(200, {
             'Content-Type': 'image/jpeg'
         })
-
 
         response.end(content);
     } else if (request.url == "/image/3") {
