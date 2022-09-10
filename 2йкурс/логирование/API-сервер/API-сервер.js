@@ -14,14 +14,6 @@ const requestHandler = (request, response) => {
 
 
 
-    } else if (request.url == "/todos") {
-        let content = fs.readFileSync("spisokk del.js");
-        response.writeHead(200, {
-            'Content-Type': 'package.json'
-        })
-
-
-
     }
 };
 http.createServer(requestHandler).listen(3000);
