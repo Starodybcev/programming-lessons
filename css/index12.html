@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS3(работа с текстом)</title>
+
+<style>
+        p.lowercase {
+            text-transform: lowercase;
+        }
+
+        p.uppercase {
+            text-transform: uppercase;
+        }
+
+        p.capitalize {
+            text-transform: capitalize;
+        }
+
+        p.under {
+            text-decoration: underline;
+        }
+
+        p.over {
+            text-decoration: overline;
+        }
+
+        p.line {
+            text-decoration: line-through;
+        }
+
+        p.mixed {
+            text-decoration: underline line-through;
+        }
+
+        a.none {
+            text-decoration: none;
+            /*Подчеркнутости*/
+        }
+
+        h1 {
+            color: rgba(248, 0, 227, 0.952);
+        }
+
+        h2 {
+            color: rgb(0, 248, 124);
+            /*Меняет цвета текста*/
+        }
+
+        a {
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            /*Цвет*/
+        }
+
+        body {
+            font-family: "Times New Roman";
+            background: linear-gradient(#18a1b93d, #000000);
+            /*background: -o-linear-gradient(#78c6eb, #C9DCB9);
+           /* background: -moz-linear-gradient(#05c0b7, #C9DCB9);
+            /*background: linear-gradient(#b249c0, #2dc1ee);*/
+            font-family: 'Alkalami', serif;
+            font-family: 'Silkscreen', cursive;
+
+
+        }
+</style>
+</head>
+
+
+<div>
+    <p class="capitalize">Каждая первая буква заглавная(capitalize)</p>
+    <p class="lowercase">Текст меняется с заглавных на маленькие (lowercase)</p>
+    <p class="uppercase">Текст меняется с маленьких на заглавные (uppercase)</p>
+
+
+
+    <p class="under">Это подчеркнутый текст(under).</p>
+    <p class="over">Это надчеркнутый текст(over)</p>
+    <p class="line">Это зачеркнутый текст(line)</p>
+    <p class="mixed">Это подчеркнутый и зачеркнутый текст(mixed)</p>
+    <p>Не подчеркнутая <a href="index.php" class="none">ссылка<a></p>
+</div> 
+</body> 
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS3(Скачал)</title>
+    <style>
+         div {
+            font-size: 1px;
+        }
+
+        @font-face {
+            font-family: "Silkscreen";
+            src: url(Silkscreen.eot?) format("eot"),
+                /* IE8+, знак ? позволяет обойти баг в обработчике значения src */
+                url(Silkscreen-Bold.ttf) format("woff"),
+                /* все современные браузеры, IE9+ */
+                url(Silkscreen-Regular.ttf) format("truetype");
+            /* все современные браузеры */
+            font-size: 1px;
+        }
+
+       
+        p {
+            font-family: "Silkscreen", Arial, sans-serif;
+        }
+                i {
+                    color: rgba(236, 2, 2, 0.952);
+                }
+                h2 {
+                    color: rgb(0, 248, 124);
+                }
+
+
+                body {
+                    background: linear-gradient(#1bc03f3d, #000000);
+                }
+            
+    </style>
+</head>
+
+<body>
+    <p>Стиль Roboto может выделять <i>курсивом</i> и <b>жирным</b>, либо
+        <b><i>и тем, и другим</i></b></p>
+</body>
+
+</html>
